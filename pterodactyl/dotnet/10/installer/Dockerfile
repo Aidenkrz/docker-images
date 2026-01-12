@@ -21,6 +21,7 @@ RUN         apt update \
                 apt-transport-https \
                 iproute2 \
                 libgdiplus \
+                libicu70 \
                 tini \
             && apt clean \
             && rm -rf /var/lib/apt/lists/*
