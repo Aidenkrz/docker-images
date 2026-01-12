@@ -32,5 +32,3 @@ RUN         wget https://dot.net/v1/dotnet-install.sh \
             && ./dotnet-install.sh -i /usr/share -v $D_V \
             && ln -s /usr/share/dotnet /usr/bin/dotnet \
             && rm dotnet-install.sh
-
-RUN         dotnet --version
