@@ -3,7 +3,7 @@ FROM        --platform=$TARGETOS/$TARGETARCH ubuntu:jammy
 LABEL       author="Durk" maintainer="administrator@goobstation.com"
 LABEL       org.opencontainers.image.source="https://github.com/aidenkrz/docker-images"
 LABEL       org.opencontainers.image.licenses=MIT
-LABEL       org.opencontainers.image.description="Pterodactyl installer image with .NET SDK support"
+LABEL       org.opencontainers.image.description="Pterodactyl installer image with .NET 10 SDK support"
 
 ENV         DEBIAN_FRONTEND=noninteractive
 
