@@ -51,11 +51,11 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/${{ steps.lower-repo.outputs.repository }}/pterodactyl-installer
+          images: ghcr.io/${{ steps.lower-repo.outputs.repository }}/pterodactyl/dotnet_${{ matrix.tag }}/installer
           tags: |
-            type=raw,value=dotnet_${{ matrix.tag }}
-            type=raw,value=dotnet_${{ matrix.tag }}-{{sha}}
-            type=raw,value=latest,enable=${{ matrix.tag == '10' }}
+            type=raw,value=latest
+            type=raw,value={{sha}}
+            type=ref,event=branch
       
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
