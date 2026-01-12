@@ -16,7 +16,7 @@ permissions:
 
 jobs:
   build:
-    name: "pterodactyl-installer:dotnet_${{ matrix.tag }}"
+    name: "dotnet_${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
